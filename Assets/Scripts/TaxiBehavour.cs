@@ -5,10 +5,12 @@ using UnityEngine;
 public class TaxiBehavour : MonoBehaviour {
 	public float maxSpeed;
 	private Rigidbody2D rb;
+	private bool facingRight;
 
 	// Use this for initialization
 	void Start () {
 		rb = GetComponent<Rigidbody2D>();
+		facingRight = true;
 	}
 	
 	// Update is called once per frame
@@ -17,5 +19,15 @@ public class TaxiBehavour : MonoBehaviour {
 		float moveY = Input.GetAxis ("Vertical"); // Pre defined in Edit -> Project settings -> Input
 		Vector2 force = new Vector2(moveX * maxSpeed, moveY * maxSpeed);
 		rb.AddForce (force);
+
+		// Flip the player in the right direction
+		if (moveX < 0 && this.facingRight || moveX > 0 && !this.facingRight) {
+			flip ();
+		}
+	}
+
+	void flip() {
+		this.facingRight = !this.facingRight;
+		transform.localScale = new Vector3(transform.localScale.x * -1, transform.localScale.y, 1);
 	}
 }
