@@ -1,0 +1,426 @@
+fileFormatVersion: 2
+guid: e585760d8ddad4041b7c19de719b9ff8
+timeCreated: 1509654867
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: taxi-sprite_0
+    21300002: taxi-sprite_1
+    21300004: taxi-sprite_2
+    21300006: taxi-sprite_3
+    21300008: taxi-sprite_4
+    21300010: taxi-sprite_5
+    21300012: taxi-sprite_6
+    21300014: taxi-sprite_7
+    21300016: taxi-sprite_8
+    21300018: taxi-sprite_9
+    21300020: taxi-sprite_10
+    21300022: taxi-sprite_11
+    21300024: taxi-sprite_12
+    21300026: taxi-sprite_13
+    21300028: taxi-sprite_14
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: taxi-sprite_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 460
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -72.88574, y: 105}
+        - {x: -166.77246, y: 72.882355}
+        - {x: -166.77246, y: -63}
+        - {x: 230, y: -63}
+        - {x: 230, y: 11.117647}
+        - {x: 142.06543, y: 105}
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: taxi-sprite_1
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 0
+        width: 460
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 79.56738, y: 97}
+        - {x: -88.44044, y: 97}
+        - {x: -118.088875, y: 93.823524}
+        - {x: -197.15138, y: 22.176466}
+        - {x: -197.15138, y: -64.29412}
+        - {x: -172.44435, y: -96.411766}
+        - {x: 175.9248, y: -96.411766}
+        - {x: 197.5, y: -66.76471}
+        - {x: 197.5, y: 9.823524}
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: taxi-sprite_2
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 0
+        width: 460
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -59.342796, y: 97}
+        - {x: -197.5, y: 39.470585}
+        - {x: -197.5, y: -61.823532}
+        - {x: -187.81937, y: -74.176476}
+        - {x: -98.87405, y: -71.70589}
+        - {x: -59.342796, y: -96.411766}
+        - {x: 64.19237, y: -96.411766}
+        - {x: 197.5, y: -69.2353}
+        - {x: 197.5, y: 19.705877}
+        - {x: 106.19432, y: 97}
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: taxi-sprite_3
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 0
+        width: 460
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -102.13094, y: 105}
+        - {x: -198.48837, y: 45.705883}
+        - {x: -198.48837, y: -67.94118}
+        - {x: -84.83602, y: -105}
+        - {x: 137.52727, y: -105}
+        - {x: 198.5, y: -70.411766}
+        - {x: 198.5, y: 43.235294}
+        - {x: 88.1132, y: 105}
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: taxi-sprite_4
+      rect:
+        serializedVersion: 2
+        x: 1840
+        y: 0
+        width: 460
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 199, y: 13.588235}
+        - {x: 97.44529, y: 100.05882}
+        - {x: 77.679665, y: 105}
+        - {x: -70.56252, y: 105}
+        - {x: -199, y: 43.235294}
+        - {x: -199, y: -50.647057}
+        - {x: -186.68558, y: -63}
+        - {x: -100.21096, y: -65.47059}
+        - {x: -38.443382, y: -105}
+        - {x: 33.207012, y: -105}
+        - {x: 43.089825, y: -77.82353}
+        - {x: 178.9785, y: -65.47059}
+        - {x: 199, y: -50.647057}
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: taxi-sprite_5
+      rect:
+        serializedVersion: 2
+        x: 2300
+        y: 0
+        width: 460
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 130.66301, y: 105}
+        - {x: -74.40535, y: 105}
+        - {x: -225, y: 55.588234}
+        - {x: -225, y: -63}
+        - {x: 217.13762, y: -63}
+        - {x: 224.54973, y: -58.058823}
+        - {x: 225, y: -50.647057}
+        - {x: 225, y: 18.529411}
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: taxi-sprite_6
+      rect:
+        serializedVersion: 2
+        x: 3680
+        y: 0
+        width: 460
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -84.411064, y: 105}
+        - {x: -225.24115, y: 30.882353}
+        - {x: -225.24115, y: -65.47059}
+        - {x: -99.23528, y: -105}
+        - {x: 91.00886, y: -105}
+        - {x: 225.5, y: -67.94118}
+        - {x: 225.5, y: 33.35294}
+        - {x: 108.30378, y: 105}
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: taxi-sprite_7
+      rect:
+        serializedVersion: 2
+        x: 4599
+        y: 0
+        width: 460
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -71.86423, y: 105}
+        - {x: -229.98923, y: 30.882353}
+        - {x: -229.98923, y: -92.64706}
+        - {x: 230, y: -92.64706}
+        - {x: 230, y: 55.588234}
+        - {x: 130.73343, y: 105}
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: taxi-sprite_8
+      rect:
+        serializedVersion: 2
+        x: 4600
+        y: 0
+        width: 460
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 131.49799, y: 97.588234}
+        - {x: 104.32025, y: 105}
+        - {x: -11.802795, y: 105}
+        - {x: -229.22467, y: 13.588235}
+        - {x: -229.22467, y: -63}
+        - {x: -80.98248, y: -92.64706}
+        - {x: 138.9101, y: -92.64706}
+        - {x: 213.03119, y: -65.47059}
+        - {x: 229.5, y: -53.117645}
+        - {x: 229.5, y: 21}
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: taxi-sprite_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 460
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -72.88574, y: 105}
+        - {x: -166.77246, y: 72.882355}
+        - {x: -166.77246, y: -63}
+        - {x: 230, y: -63}
+        - {x: 230, y: 11.117647}
+        - {x: 142.06543, y: 105}
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: taxi-sprite_12
+      rect:
+        serializedVersion: 2
+        x: 2760
+        y: 0
+        width: 460
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 223, y: -55.588234}
+        - {x: 223, y: 85.23529}
+        - {x: 132.4628, y: 105}
+        - {x: -198.61142, y: 105}
+        - {x: -223, y: 45.705883}
+        - {x: -223, y: -63}
+        - {x: -126.96103, y: -63}
+        - {x: -122.01962, y: -58.058823}
+        - {x: 16.339756, y: -63}
+        - {x: 189.28897, y: -63}
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: taxi-sprite_13
+      rect:
+        serializedVersion: 2
+        x: 3220
+        y: 0
+        width: 460
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 210.38858, y: -50.647057}
+        - {x: 210.38858, y: 13.588235}
+        - {x: 143.6796, y: 105}
+        - {x: -140.45128, y: 105}
+        - {x: -238.5, y: 18.529411}
+        - {x: -238.5, y: -48.17647}
+        - {x: -207.16026, y: -63}
+        - {x: -91.03721, y: -63}
+        - {x: -88.566505, y: -58.058823}
+        - {x: 37.439358, y: -63}
+        - {x: 193.09366, y: -63}
+      - - {x: 217.80069, y: 1.2352941}
+        - {x: 217.80069, y: -45.705883}
+        - {x: 225.2128, y: -53.117645}
+        - {x: 238.5, y: -53.117645}
+        - {x: 238.5, y: 1.2352941}
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: taxi-sprite_14
+      rect:
+        serializedVersion: 2
+        x: 4140
+        y: 0
+        width: 460
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 71.15999, y: 105}
+        - {x: -74.611496, y: 105}
+        - {x: -200.61736, y: 48.17647}
+        - {x: -200.61736, y: -105}
+        - {x: 201, y: -105}
+        - {x: 201, y: 33.35294}
+        - {x: 85.98421, y: 100.05882}
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
