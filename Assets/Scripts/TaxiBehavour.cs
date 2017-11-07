@@ -3,9 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class TaxiBehavour : MonoBehaviour {
+	
 	public float maxSpeed;
+	public LayerMask platform;
+	public Transform gearCheck;
+
 	private Rigidbody2D rb;
 	private bool facingRight;
+	private bool gearDown = true;
+	private float gearCheckRadius = 0.5f;
 	private Animator anim;
 
 	// Use this for initialization
@@ -14,7 +20,7 @@ public class TaxiBehavour : MonoBehaviour {
 		anim = GetComponent<Animator> ();
 		facingRight = true;
 	}
-	
+
 	// Update is called once per frame
 	void FixedUpdate () {
 		float moveX = Input.GetAxis ("Horizontal"); // Pre defined in Edit -> Project settings -> Input
@@ -24,6 +30,8 @@ public class TaxiBehavour : MonoBehaviour {
 
 		Vector2 force = new Vector2(moveX * maxSpeed, moveY * maxSpeed);
 		rb.AddForce (force);
+
+		anim.SetBool("gearDown", Physics2D.OverlapCircle(gearCheck.position, gearCheckRadius, platform));
 
 		// Flip the player in the right direction
 		if (moveX < 0 && this.facingRight || moveX > 0 && !this.facingRight) {
