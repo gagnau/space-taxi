@@ -339,8 +339,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be22295ae37184b2cb04d1c5972a576b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  respawnPrefab: {fileID: 1818833494781184, guid: 8ebafc76cd48b4424a92fae385a82231,
-    type: 2}
+  respawnPrefab: {fileID: 1762370300}
 --- !u!61 &236332486
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -407,8 +406,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be22295ae37184b2cb04d1c5972a576b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  respawnPrefab: {fileID: 1818833494781184, guid: 8ebafc76cd48b4424a92fae385a82231,
-    type: 2}
+  respawnPrefab: {fileID: 1762370300}
 --- !u!61 &520776773
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -510,8 +508,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be22295ae37184b2cb04d1c5972a576b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  respawnPrefab: {fileID: 1818833494781184, guid: 8ebafc76cd48b4424a92fae385a82231,
-    type: 2}
+  respawnPrefab: {fileID: 1762370300}
 --- !u!61 &846508277
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -741,8 +738,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be22295ae37184b2cb04d1c5972a576b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  respawnPrefab: {fileID: 1818833494781184, guid: 8ebafc76cd48b4424a92fae385a82231,
-    type: 2}
+  respawnPrefab: {fileID: 1762370300}
 --- !u!61 &1461857165
 BoxCollider2D:
   m_ObjectHideFlags: 0
