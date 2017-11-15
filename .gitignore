@@ -35,3 +35,5 @@ sysinfo.txt
 
 #mac
 *.DS_Store
+**/.DS_Store
+
