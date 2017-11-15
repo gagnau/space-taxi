@@ -112,6 +112,52 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &36287577
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 971415860}
+    m_Modifications:
+    - target: {fileID: 4820756050875910, guid: aaf8218e5d7384a4b9108257581f66b5, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -5.44
+      objectReference: {fileID: 0}
+    - target: {fileID: 4820756050875910, guid: aaf8218e5d7384a4b9108257581f66b5, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4820756050875910, guid: aaf8218e5d7384a4b9108257581f66b5, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4820756050875910, guid: aaf8218e5d7384a4b9108257581f66b5, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4820756050875910, guid: aaf8218e5d7384a4b9108257581f66b5, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4820756050875910, guid: aaf8218e5d7384a4b9108257581f66b5, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4820756050875910, guid: aaf8218e5d7384a4b9108257581f66b5, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4820756050875910, guid: aaf8218e5d7384a4b9108257581f66b5, type: 2}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1538620684800676, guid: aaf8218e5d7384a4b9108257581f66b5, type: 2}
+      propertyPath: m_Name
+      value: SpawnPoint (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: aaf8218e5d7384a4b9108257581f66b5, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1001 &39792632
 Prefab:
   m_ObjectHideFlags: 0
@@ -154,6 +200,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8ebafc76cd48b4424a92fae385a82231, type: 2}
   m_IsPrefabParent: 0
+--- !u!4 &42827803 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4820756050875910, guid: aaf8218e5d7384a4b9108257581f66b5,
+    type: 2}
+  m_PrefabInternal: {fileID: 36287577}
 --- !u!1001 &123538161
 Prefab:
   m_ObjectHideFlags: 0
@@ -569,6 +620,7 @@ Transform:
   m_Children:
   - {fileID: 2106409067}
   - {fileID: 238201731}
+  - {fileID: 42827803}
   m_Father: {fileID: 1619370134}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -882,6 +934,7 @@ MonoBehaviour:
   spawnPoints:
   - {fileID: 2106409067}
   - {fileID: 238201731}
+  - {fileID: 42827803}
 --- !u!1 &1967306764
 GameObject:
   m_ObjectHideFlags: 0

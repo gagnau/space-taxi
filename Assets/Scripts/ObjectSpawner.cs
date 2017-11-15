@@ -1,16 +1,21 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class ObjectSpawner : MonoBehaviour {
 
 	public GameObject gameObject;                // The enemy prefab to be spawned.
 	public float spawnTime = 3f;            // How long between each spawn.
 	public Transform[] spawnPoints;         // An array of the spawn points this enemy can spawn from.
+	private string eventNameString = "Spawn";
+	private UnityAction callback;
+	private UnityAction eventListener;
 
 	// Use this for initialization
 	void Start () {
-		InvokeRepeating ("Spawn", spawnTime, spawnTime);	
+		callback = new UnityAction (Spawn);
+		EventManager.StartListening (eventNameString, callback);
 	}
 
 	void Spawn ()
@@ -20,5 +25,12 @@ public class ObjectSpawner : MonoBehaviour {
 
 		// Create an instance of the enemy prefab at the randomly selected spawn point's position and rotation.
 		Instantiate (gameObject, spawnPoints[spawnPointIndex].position, spawnPoints[spawnPointIndex].rotation);
+	}
+
+	void OnDestroy() {
+		Debug.Log ("ObjectSpawner: OnDestroy)");
+
+		EventManager.StopListening (eventNameString,callback);
+
 	}
 }
