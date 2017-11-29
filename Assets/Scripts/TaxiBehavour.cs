@@ -11,6 +11,7 @@ public class TaxiBehavour : MonoBehaviour {
 	private Rigidbody2D rb;
 	private bool facingRight;
 	private bool gearDown = true;
+	private bool isLanded = false;
 	private float gearCheckRadius = 0.5f;
 	private Animator anim;
 
@@ -23,7 +24,7 @@ public class TaxiBehavour : MonoBehaviour {
 
 	// Update is called once per frame
 	void FixedUpdate () {
-		float moveX = Input.GetAxis ("Horizontal"); // Pre defined in Edit -> Project settings -> Input
+		float moveX = isLanded ? 0 : Input.GetAxis ("Horizontal"); // Pre defined in Edit -> Project settings -> Input
 		float moveY = Input.GetAxis ("Vertical"); // Pre defined in Edit -> Project settings -> Input
 		anim.SetFloat("verticalSpeed", Mathf.Abs(moveY));
 		anim.SetFloat("horizontalSpeed", Mathf.Abs(moveX));
@@ -40,7 +41,18 @@ public class TaxiBehavour : MonoBehaviour {
 	}
 
 	void flip() {
+		Debug.unityLogger.Log ("Flippin");
 		this.facingRight = !this.facingRight;
 		transform.localScale = new Vector3(transform.localScale.x * -1, transform.localScale.y, 1);
+	}
+
+	void OnCollisionEnter2D(Collision2D other) {
+		Debug.unityLogger.Log ("on enter");
+		isLanded = (other.gameObject.layer == 8);
+	}
+
+	void OnCollisionExit2D(Collision2D other) {
+		Debug.unityLogger.Log ("on enter");
+		isLanded = !((other.gameObject.layer == 8) && isLanded);
 	}
 }
