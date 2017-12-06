@@ -8,7 +8,10 @@ public class DeadZoneCollission : MonoBehaviour {
 
 	void OnCollisionEnter2D(Collision2D col) {
 		if (col.collider.tag == "Player") {
-			Destroy(GameObject.FindGameObjectWithTag (col.collider.tag));
+
+			PlayerHealth playerHealth = col.gameObject.GetComponent<PlayerHealth> ();//GameObject.FindGameObjectWithTag (col.collider.tag).GetComponent<PlayerHealth>();
+			playerHealth.addDamage (200);
+
 			Instantiate(respawnPrefab, new Vector3 (respawnPrefab.transform.position.x, respawnPrefab.transform.position.y,0), Quaternion.identity);
 		}
 

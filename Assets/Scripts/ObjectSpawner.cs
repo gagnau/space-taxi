@@ -6,7 +6,6 @@ using UnityEngine.Events;
 public class ObjectSpawner : MonoBehaviour {
 
 	public GameObject gameObject;                // The enemy prefab to be spawned.
-	public float spawnTime = 3f;            // How long between each spawn.
 	public Transform[] spawnPoints;         // An array of the spawn points this enemy can spawn from.
 	private string eventNameString = "Spawn";
 	private UnityAction callback;

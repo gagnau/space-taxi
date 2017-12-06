@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour {
-	public float maxHealth;
+	public float maxHealth = 10;
 	public GameObject explosionFX;
 
 	private float currentHealth;
@@ -13,12 +13,9 @@ public class PlayerHealth : MonoBehaviour {
 		currentHealth = maxHealth;
 	}
 	
-	// Update is called once per frame
-	void FixedUpdate () {
-		if (currentHealth <= 0) {
-			destroyPlayer ();
-		}
+	void Update(){
 	}
+
 
 	public void destroyPlayer() {
 		Instantiate (explosionFX, transform.position, transform.rotation);
@@ -27,5 +24,8 @@ public class PlayerHealth : MonoBehaviour {
 
 	public void addDamage(float damage) {
 		currentHealth -= damage;
+		if (currentHealth <= 0) {
+			destroyPlayer ();
+		}
 	}
 }
