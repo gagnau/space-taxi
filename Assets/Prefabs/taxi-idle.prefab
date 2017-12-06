@@ -39,6 +39,7 @@ GameObject:
   - component: {fileID: 50211367833861296}
   - component: {fileID: 61502153003050120}
   - component: {fileID: 95262768661890710}
+  - component: {fileID: 114195782423745178}
   m_Layer: 0
   m_Name: taxi-idle
   m_TagString: Player
@@ -135,6 +136,19 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114195782423745178
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1990665770157760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f18a3c821edd45728500427851ae038, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 0
+  explosionFX: {fileID: 0}
 --- !u!114 &114868684325249718
 MonoBehaviour:
   m_ObjectHideFlags: 1
