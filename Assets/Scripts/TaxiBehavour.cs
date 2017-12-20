@@ -10,7 +10,6 @@ public class TaxiBehavour : MonoBehaviour {
 
 	private Rigidbody2D rb;
 	private bool facingRight;
-	private bool gearDown = true;
 	private bool isLanded = false;
 	private float gearCheckRadius = 0.5f;
 	private Animator anim;
