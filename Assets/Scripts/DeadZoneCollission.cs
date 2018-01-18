@@ -12,8 +12,10 @@ public class DeadZoneCollission : MonoBehaviour {
 			PlayerHealth playerHealth = col.gameObject.GetComponent<PlayerHealth> ();//GameObject.FindGameObjectWithTag (col.collider.tag).GetComponent<PlayerHealth>();
 			playerHealth.addDamage (200);
 
-			Instantiate(respawnPrefab, new Vector3 (respawnPrefab.transform.position.x, respawnPrefab.transform.position.y,0), Quaternion.identity);
-		}
+			GameObject newPlayer = Instantiate(respawnPrefab, new Vector3 (respawnPrefab.transform.position.x, respawnPrefab.transform.position.y,0), Quaternion.identity);
 
+			CameraController cc = Camera.main.GetComponent<CameraController> ();
+			cc.resetCamera(newPlayer.transform);
+		}
 	}
 }

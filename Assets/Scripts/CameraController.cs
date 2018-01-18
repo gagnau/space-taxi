@@ -26,8 +26,6 @@ public class CameraController : MonoBehaviour {
 	void FixedUpdate () {
 		Vector3 newPosition = targetTransform.position + offset;
 
-		Debug.unityLogger.Log (newPosition.y);
-
 		if (newPosition.x > maxX || newPosition.x < minX) {
 			newPosition.x = transform.position.x;
 		}
@@ -39,5 +37,11 @@ public class CameraController : MonoBehaviour {
 		transform.position = Vector3.Lerp (transform.position, newPosition, smoothing * Time.deltaTime);
 
 		// todo: if xmin etc...
+	}
+
+	public void resetCamera(Transform t) {
+		targetTransform = t;
+		Vector3 newPosition = targetTransform.position + offset;
+		transform.position = newPosition;
 	}
 }
