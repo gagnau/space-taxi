@@ -24,19 +24,22 @@ public class CameraController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void FixedUpdate () {
-		Vector3 newPosition = targetTransform.position + offset;
+		if(targetTransform) {
+			
+			Vector3 newPosition = targetTransform.position + offset;
 
-		if (newPosition.x > maxX || newPosition.x < minX) {
-			newPosition.x = transform.position.x;
+			if (newPosition.x > maxX || newPosition.x < minX) {
+				newPosition.x = transform.position.x;
+			}
+		
+			if (newPosition.y > maxY || newPosition.y < minY) {
+				newPosition.y = transform.position.y;
+			}
+
+			transform.position = Vector3.Lerp (transform.position, newPosition, smoothing * Time.deltaTime);
+
+			// todo: if xmin etc...
 		}
-	
-		if (newPosition.y > maxY || newPosition.y < minY) {
-			newPosition.y = transform.position.y;
-		}
-
-		transform.position = Vector3.Lerp (transform.position, newPosition, smoothing * Time.deltaTime);
-
-		// todo: if xmin etc...
 	}
 
 	public void resetCamera(Transform t) {

@@ -40,18 +40,15 @@ public class TaxiBehavour : MonoBehaviour {
 	}
 
 	void flip() {
-		Debug.unityLogger.Log ("Flippin");
 		this.facingRight = !this.facingRight;
 		transform.localScale = new Vector3(transform.localScale.x * -1, transform.localScale.y, 1);
 	}
 
 	void OnCollisionEnter2D(Collision2D other) {
-		Debug.unityLogger.Log ("on enter");
 		isLanded = (other.gameObject.layer == 8);
 	}
 
 	void OnCollisionExit2D(Collision2D other) {
-		Debug.unityLogger.Log ("on enter");
 		isLanded = !((other.gameObject.layer == 8) && isLanded);
 	}
 }

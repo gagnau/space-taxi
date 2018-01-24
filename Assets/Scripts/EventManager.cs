@@ -41,8 +41,6 @@ public class EventManager : MonoBehaviour {
 
 	public static void StartListening (string eventName, UnityAction listener)
 	{
-		Debug.Log("EventManager starts listening to: " + eventName);
-
 		UnityEvent thisEvent = null;
 		if (instance.eventDictionary.TryGetValue (eventName, out thisEvent))
 		{
@@ -58,8 +56,6 @@ public class EventManager : MonoBehaviour {
 
 	public static void StopListening (string eventName, UnityAction listener)
 	{
-		Debug.Log("EventManager stop listening to: " + eventName);
-		
 		if (eventManager == null) return;
 		UnityEvent thisEvent = null;
 		if (instance.eventDictionary.TryGetValue (eventName, out thisEvent))
@@ -70,8 +66,6 @@ public class EventManager : MonoBehaviour {
 
 	public static void TriggerEvent (string eventName)
 	{
-		Debug.Log("EventManager - event triggered: " + eventName);
-
 		UnityEvent thisEvent = null;
 		if (instance.eventDictionary.TryGetValue (eventName, out thisEvent))
 		{
