@@ -8,7 +8,6 @@ public class CustomerController : MonoBehaviour {
 
 	private string currentPlatformTag = "-1";
 	public string destinationPlatformTag = "-1";
-	private string destination = "";
 	private List<string> platformList;
 
 	// Use this for initialization
@@ -23,21 +22,21 @@ public class CustomerController : MonoBehaviour {
 		if (layer == LayerMask.NameToLayer ("Platform")) {
 			currentPlatformTag = other.gameObject.tag;
 
-
+			FindDestinationTag ();
 			//Debug.Log ("Player on platform: " + currentPlatformTag);
 		}
-
-		findDestinationTag ();
 	}
 
-	private void findDestinationTag () {
+	private void FindDestinationTag () {
 		// Remove current tag
 		Debug.Log ("Current platform: " + currentPlatformTag);
 
 		platformList.Remove(currentPlatformTag);
 
-		int randomIndex = UnityEngine.Random.Range (0, platformList.Count);
+		//Note that max is inclusive, so using Random.Range( 0.0f, 1.0f ) could return 1.0 as a value.
+		int randomIndex = UnityEngine.Random.Range (0, platformList.Count-1);
 		destinationPlatformTag = platformList[randomIndex];
+
 
 		Debug.Log ("Target platform: " + destinationPlatformTag);
 

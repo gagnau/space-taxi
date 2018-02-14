@@ -1073,7 +1073,7 @@ MonoBehaviour:
   - {fileID: 42827803}
   - {fileID: 1154827818}
   customer: {fileID: 1353058840021476, guid: c864586e9baec43da83ad0d646fd1955, type: 2}
-  maxCustomers: 3
+  maxCustomers: 1
 --- !u!1 &1967306764
 GameObject:
   m_ObjectHideFlags: 0
