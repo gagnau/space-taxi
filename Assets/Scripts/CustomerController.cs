@@ -12,7 +12,7 @@ public class CustomerController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		platformList = FindPlatformsInLayer (LayerMask.NameToLayer ("Platform"));
+		platformList = FindPlatformsTagsInLayer (LayerMask.NameToLayer ("Platform"));
 	}
 	
 	void OnCollisionEnter2D(Collision2D other) {
@@ -20,44 +20,52 @@ public class CustomerController : MonoBehaviour {
 		int layer = other.gameObject.layer;
 
 		if (layer == LayerMask.NameToLayer ("Platform")) {
-			currentPlatformTag = other.gameObject.tag;
 
-			FindDestinationTag ();
-			//Debug.Log ("Player on platform: " + currentPlatformTag);
+			if (destinationPlatformTag != other.gameObject.tag) {
+				currentPlatformTag = other.gameObject.tag;
+
+				FindDestinationTag ();
+				//Debug.Log ("Player on platform: " + currentPlatformTag);
+			} else {
+				//We have reached our destination.
+				//Call CustomerSpawner.removeCustomer() 
+				//
+				//Destroy (gameObject);
+			}
 		}
 	}
 
 	private void FindDestinationTag () {
+
 		// Remove current tag
 		Debug.Log ("Current platform: " + currentPlatformTag);
-
+	
 		platformList.Remove(currentPlatformTag);
 
 		//Note that max is inclusive, so using Random.Range( 0.0f, 1.0f ) could return 1.0 as a value.
 		int randomIndex = UnityEngine.Random.Range (0, platformList.Count-1);
 		destinationPlatformTag = platformList[randomIndex];
 
-
 		Debug.Log ("Target platform: " + destinationPlatformTag);
-
 	}
 
-	List<string> FindPlatformsInLayer (int layer) { 
+	List<string> FindPlatformsTagsInLayer (int layer) { 
 
 		GameObject[] goArray = FindObjectsOfType(typeof(GameObject)) as GameObject[]; 
-		List<string> goList = new List<string>(); 
+		List<string> tagList = new List<string>(); 
 
 		for (int i = 0; i < goArray.Length; i++) { 
 
 			if (goArray[i].layer == layer) { 
-				goList.Add(goArray[i].tag); 
+				tagList.Add(goArray[i].tag); 
 			} 
 		} 
 
-		if (goList.Count == 0) { 
+		if (tagList.Count == 0) { 
+			Debug.Log ("!!! No platforms found in layer: " + layer);
 			return null; 
 		} 
 
-		return goList; 
+		return tagList; 
 	}
 }
